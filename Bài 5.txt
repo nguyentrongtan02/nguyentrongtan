@@ -1,0 +1,47 @@
+*Github là một hệ thống  để quản lý hiệu quả các dự án và các phiên bản code, hoạt động tương tự như một mạng lưới xã hội cho lập các trình viên.
+*Git là một hệ thống quản lý phiên bản phân tán (Distributed Version Control System – DVCS), nó là một trong những hệ thống quản lý phiên bản phân tán phổ biến nhất hiện nay.
+*Git cung cấp cho mỗi lập trình viên kho lưu trữ (repository) riêng chứa toàn bộ lịch sử thay đổi.
+
+*Các lệnh git đã được học:
+1.Git config:
+Tác dụng : Để set user name và email của bạn trong main configuration file.
+Cách xài : Để kiểm tra tên và kiểu email trong cấu hình dùng git config -- global user.name và git config -- global user.email. Để set email hoặc tên mới git config -- global user.name = “Hải Nguyễn” và git config -- global user.email = “hainguyen@gmail.com”
+2.Git init:
+
+
+Tác dụng : Khởi tạo 1 git repository 1 project mới hoặc đã có.
+
+Cách xài: git init trong thư mục gốc của dự án.
+3.Git clon;
+Tác dụng: Copy 1 git repository từ remote source.
+Cách xài: git clone <:clone git url:>
+
+4.Git status:
+Tác dụng: Để check trạng thái của những file bạn đã thay đổi trong thư mục làm việc. VD: Tất cả các thay đổi cuối cùng từ lần commit cuối cùng.
+Cách xài: git status trong thư mục làm việc.
+
+5.Git add:
+Tác dụng: Để đưa một tập tin vào Staging Area
+Cách dùng: git add tên_file hoặc muốn thêm hết file của thư mục thì git add all
+
+6.Git commit:
+Tác dụng: commit nghĩa là một action để Git lưu lại một snapshot của các sự thay đổi trong thư mục làm việc. Và các tập tin, thư mục được thay đổi đã phải nằm trong Staging Area. Mỗi lần commit nó sẽ được lưu lại lịch sử chỉnh sửa của code kèm theo tên và địa chỉ email của người commit. Ngoài ra trong Git bạn cũng có thể khôi phục lại tập tin trong lịch sử commit của nó để chia cho một branch khác, vì vậy bạn sẽ dễ dàng khôi phục lại các thay đổi trước đó.
+
+Cách dùng: git commit -m ”Đây là message, bạn dùng để note những thay đổi để sau này dễ dò lại”
+
+7.Git pust/pull:
+Tác dụng: Push hoặc Pull các thay đổi đến remote. Nếu bạn đã added và committed các thay đổi và bạn muốn đẩy nó lên hoặc remote của bạn đã update và bạn apply tất cả thay đổi đó trên code của mình.
+
+Cách dùng: git pull <:remote:> <:branch:> and git push <:remote:> <:branch:>
+
+8.Git reset:
+Tác dụng: Bạn đã đưa một tập tin nào đó vào Staging Area nhưng bây giờ bạn muốn loại bỏ nó ra khỏi đây để không phải bị commit theo.
+
+Cách dùng: git reset HEAD tên_file
+
+9.Git remote:
+Tác dụng: Để check remote/source bạn có hoặc add thêm remote
+
+Cách dùng: git remote để kiểm tra và liệt kê. Và git remote add <: remote_url:> để thêm.
+
+
